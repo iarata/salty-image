@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB031622272FED95002213F5 /* SaltyAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB031621272FED95002213F5 /* SaltyAlert.swift */; };
+		BB4F1DD92725ADD800843E62 /* Salty_ImageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4F1DD82725ADD800843E62 /* Salty_ImageApp.swift */; };
+		BB4F1DDB2725ADD800843E62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4F1DDA2725ADD800843E62 /* ContentView.swift */; };
+		BB4F1DDD2725ADDB00843E62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB4F1DDC2725ADDB00843E62 /* Assets.xcassets */; };
+		BB4F1DE02725ADDB00843E62 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB4F1DDF2725ADDB00843E62 /* Preview Assets.xcassets */; };
+		BB4F1DEA2725B12C00843E62 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB4F1DE92725B12C00843E62 /* GoogleService-Info.plist */; };
+		BB4F1DFF272697A000843E62 /* InitSalt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4F1DFE2726979F00843E62 /* InitSalt.swift */; };
+		BB4F1E032726AE9F00843E62 /* SaltyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4F1E022726AE9F00843E62 /* SaltyManager.swift */; };
+		BB4F1E072726B7D500843E62 /* ProjectAspects.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4F1E062726B7D500843E62 /* ProjectAspects.swift */; };
+		BB4F1E092726ED8800843E62 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4F1E082726ED8800843E62 /* FirebaseManager.swift */; };
+		BB4F1E162729077F00843E62 /* Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4F1E152729077F00843E62 /* Extenstions.swift */; };
+		BB4F1E1A27290A9A00843E62 /* SaltCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4F1E1927290A9A00843E62 /* SaltCenter.swift */; };
+		BB4F1E1D27290CCC00843E62 /* InitialSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4F1E1C27290CCC00843E62 /* InitialSheet.swift */; };
+		BB9827FB2732CF5100A44501 /* SEImagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9827FA2732CF5100A44501 /* SEImagePreview.swift */; };
+		BB9827FF2732CFCA00A44501 /* SaltyEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9827FE2732CFCA00A44501 /* SaltyEditor.swift */; };
+		BB9828022732DDE300A44501 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = BB9828012732DDE300A44501 /* FirebaseAuth */; };
+		BB9828042732DDE300A44501 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = BB9828032732DDE300A44501 /* FirebaseDatabase */; };
+		BB9828062732DDE300A44501 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = BB9828052732DDE300A44501 /* FirebaseFirestore */; };
+		BB9828082732DDE300A44501 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = BB9828072732DDE300A44501 /* FirebaseStorage */; };
+		BBAE8D7A272BEA2200FE2E4E /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAE8D79272BEA2200FE2E4E /* ProgressIndicator.swift */; };
+		BBF8C7A427295F2D002EAE57 /* NewSalt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF8C7A327295F2D002EAE57 /* NewSalt.swift */; };
+		BBF8C7A62729745C002EAE57 /* SaltField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF8C7A52729745C002EAE57 /* SaltField.swift */; };
+		BBF8C7AA272AE2E3002EAE57 /* FileMT.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF8C7A9272AE2E3002EAE57 /* FileMT.swift */; };
+		BBF8C7AC272AF0A1002EAE57 /* InitialSheetNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF8C7AB272AF0A1002EAE57 /* InitialSheetNetwork.swift */; };
+		BBFA610E273397C400AB88A9 /* main_stitch.py in Resources */ = {isa = PBXBuildFile; fileRef = BBFA610B273397C300AB88A9 /* main_stitch.py */; };
+		BBFA610F273397C400AB88A9 /* alpha_blending.py in Resources */ = {isa = PBXBuildFile; fileRef = BBFA610C273397C400AB88A9 /* alpha_blending.py */; };
+		BBFA6110273397C400AB88A9 /* img_readwrite.py in Resources */ = {isa = PBXBuildFile; fileRef = BBFA610D273397C400AB88A9 /* img_readwrite.py */; };
+		BBFA611327339B3600AB88A9 /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = BBFA611227339B3600AB88A9 /* PythonKit */; };
+		BBFA61152733A03D00AB88A9 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = BBFA61142733A03D00AB88A9 /* __init__.py */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BB031621272FED95002213F5 /* SaltyAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaltyAlert.swift; sourceTree = "<group>"; };
+		BB4F1DD52725ADD800843E62 /* Salty Image.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Salty Image.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB4F1DD82725ADD800843E62 /* Salty_ImageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Salty_ImageApp.swift; sourceTree = "<group>"; };
+		BB4F1DDA2725ADD800843E62 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BB4F1DDC2725ADDB00843E62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB4F1DDF2725ADDB00843E62 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BB4F1DE12725ADDB00843E62 /* Salty_Image.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Salty_Image.entitlements; sourceTree = "<group>"; };
+		BB4F1DE92725B12C00843E62 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BB4F1DFE2726979F00843E62 /* InitSalt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitSalt.swift; sourceTree = "<group>"; };
+		BB4F1E012726A02200843E62 /* Salty-Image-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Salty-Image-Info.plist"; sourceTree = SOURCE_ROOT; };
+		BB4F1E022726AE9F00843E62 /* SaltyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaltyManager.swift; sourceTree = "<group>"; };
+		BB4F1E062726B7D500843E62 /* ProjectAspects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectAspects.swift; sourceTree = "<group>"; };
+		BB4F1E082726ED8800843E62 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		BB4F1E152729077F00843E62 /* Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extenstions.swift; sourceTree = "<group>"; };
+		BB4F1E1927290A9A00843E62 /* SaltCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaltCenter.swift; sourceTree = "<group>"; };
+		BB4F1E1C27290CCC00843E62 /* InitialSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialSheet.swift; sourceTree = "<group>"; };
+		BB9827FA2732CF5100A44501 /* SEImagePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEImagePreview.swift; sourceTree = "<group>"; };
+		BB9827FE2732CFCA00A44501 /* SaltyEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaltyEditor.swift; sourceTree = "<group>"; };
+		BBAE8D79272BEA2200FE2E4E /* ProgressIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicator.swift; sourceTree = "<group>"; };
+		BBF8C7A327295F2D002EAE57 /* NewSalt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSalt.swift; sourceTree = "<group>"; };
+		BBF8C7A52729745C002EAE57 /* SaltField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaltField.swift; sourceTree = "<group>"; };
+		BBF8C7A9272AE2E3002EAE57 /* FileMT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileMT.swift; sourceTree = "<group>"; };
+		BBF8C7AB272AF0A1002EAE57 /* InitialSheetNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialSheetNetwork.swift; sourceTree = "<group>"; };
+		BBFA610B273397C300AB88A9 /* main_stitch.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = main_stitch.py; sourceTree = "<group>"; };
+		BBFA610C273397C400AB88A9 /* alpha_blending.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = alpha_blending.py; sourceTree = "<group>"; };
+		BBFA610D273397C400AB88A9 /* img_readwrite.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = img_readwrite.py; sourceTree = "<group>"; };
+		BBFA61142733A03D00AB88A9 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB4F1DD22725ADD800843E62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB9828042732DDE300A44501 /* FirebaseDatabase in Frameworks */,
+				BB9828082732DDE300A44501 /* FirebaseStorage in Frameworks */,
+				BB9828022732DDE300A44501 /* FirebaseAuth in Frameworks */,
+				BB9828062732DDE300A44501 /* FirebaseFirestore in Frameworks */,
+				BBFA611327339B3600AB88A9 /* PythonKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB4F1DCC2725ADD800843E62 = {
+			isa = PBXGroup;
+			children = (
+				BB4F1DD72725ADD800843E62 /* Salty Image */,
+				BB4F1DD62725ADD800843E62 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB4F1DD62725ADD800843E62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB4F1DD52725ADD800843E62 /* Salty Image.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB4F1DD72725ADD800843E62 /* Salty Image */ = {
+			isa = PBXGroup;
+			children = (
+				BBFA610A273397A700AB88A9 /* Pythons */,
+				BB4F1E012726A02200843E62 /* Salty-Image-Info.plist */,
+				BB4F1DE82725AF2B00843E62 /* Model */,
+				BB4F1DE72725AF1C00843E62 /* View */,
+				BB4F1E1727290A6600843E62 /* Presenters */,
+				BB4F1DD82725ADD800843E62 /* Salty_ImageApp.swift */,
+				BB4F1DDA2725ADD800843E62 /* ContentView.swift */,
+				BB4F1DDC2725ADDB00843E62 /* Assets.xcassets */,
+				BB4F1DE12725ADDB00843E62 /* Salty_Image.entitlements */,
+				BB4F1DE92725B12C00843E62 /* GoogleService-Info.plist */,
+				BB4F1DDE2725ADDB00843E62 /* Preview Content */,
+			);
+			path = "Salty Image";
+			sourceTree = "<group>";
+		};
+		BB4F1DDE2725ADDB00843E62 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BB4F1DDF2725ADDB00843E62 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BB4F1DE72725AF1C00843E62 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB9827F52732CEE800A44501 /* SaltyEditor */,
+				BB4F1E1B27290CB500843E62 /* Init */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BB4F1DE82725AF2B00843E62 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB4F1E022726AE9F00843E62 /* SaltyManager.swift */,
+				BB4F1E082726ED8800843E62 /* FirebaseManager.swift */,
+				BB4F1E152729077F00843E62 /* Extenstions.swift */,
+				BBF8C7A9272AE2E3002EAE57 /* FileMT.swift */,
+				BB031621272FED95002213F5 /* SaltyAlert.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BB4F1E1727290A6600843E62 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				BB4F1E062726B7D500843E62 /* ProjectAspects.swift */,
+				BB4F1E1927290A9A00843E62 /* SaltCenter.swift */,
+				BBF8C7A52729745C002EAE57 /* SaltField.swift */,
+				BBAE8D79272BEA2200FE2E4E /* ProgressIndicator.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		BB4F1E1B27290CB500843E62 /* Init */ = {
+			isa = PBXGroup;
+			children = (
+				BBF8C7A327295F2D002EAE57 /* NewSalt.swift */,
+				BB4F1DFE2726979F00843E62 /* InitSalt.swift */,
+				BB4F1E1C27290CCC00843E62 /* InitialSheet.swift */,
+				BBF8C7AB272AF0A1002EAE57 /* InitialSheetNetwork.swift */,
+			);
+			path = Init;
+			sourceTree = "<group>";
+		};
+		BB9827F52732CEE800A44501 /* SaltyEditor */ = {
+			isa = PBXGroup;
+			children = (
+				BB9827FA2732CF5100A44501 /* SEImagePreview.swift */,
+				BB9827FE2732CFCA00A44501 /* SaltyEditor.swift */,
+			);
+			path = SaltyEditor;
+			sourceTree = "<group>";
+		};
+		BBFA610A273397A700AB88A9 /* Pythons */ = {
+			isa = PBXGroup;
+			children = (
+				BBFA610C273397C400AB88A9 /* alpha_blending.py */,
+				BBFA610D273397C400AB88A9 /* img_readwrite.py */,
+				BBFA61142733A03D00AB88A9 /* __init__.py */,
+				BBFA610B273397C300AB88A9 /* main_stitch.py */,
+			);
+			path = Pythons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB4F1DD42725ADD800843E62 /* Salty Image */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB4F1DE42725ADDB00843E62 /* Build configuration list for PBXNativeTarget "Salty Image" */;
+			buildPhases = (
+				BB4F1DD12725ADD800843E62 /* Sources */,
+				BB4F1DD22725ADD800843E62 /* Frameworks */,
+				BB4F1DD32725ADD800843E62 /* Resources */,
+				BB4F1E0027269F3300843E62 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Salty Image";
+			packageProductDependencies = (
+				BB9828012732DDE300A44501 /* FirebaseAuth */,
+				BB9828032732DDE300A44501 /* FirebaseDatabase */,
+				BB9828052732DDE300A44501 /* FirebaseFirestore */,
+				BB9828072732DDE300A44501 /* FirebaseStorage */,
+				BBFA611227339B3600AB88A9 /* PythonKit */,
+			);
+			productName = "Salty Image";
+			productReference = BB4F1DD52725ADD800843E62 /* Salty Image.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB4F1DCD2725ADD800843E62 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					BB4F1DD42725ADD800843E62 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = BB4F1DD02725ADD800843E62 /* Build configuration list for PBXProject "Salty Image" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB4F1DCC2725ADD800843E62;
+			packageReferences = (
+				BB9828002732DDE300A44501 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				BBFA611127339B3600AB88A9 /* XCRemoteSwiftPackageReference "PythonKit" */,
+			);
+			productRefGroup = BB4F1DD62725ADD800843E62 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB4F1DD42725ADD800843E62 /* Salty Image */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB4F1DD32725ADD800843E62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBFA610F273397C400AB88A9 /* alpha_blending.py in Resources */,
+				BBFA610E273397C400AB88A9 /* main_stitch.py in Resources */,
+				BBFA61152733A03D00AB88A9 /* __init__.py in Resources */,
+				BBFA6110273397C400AB88A9 /* img_readwrite.py in Resources */,
+				BB4F1DE02725ADDB00843E62 /* Preview Assets.xcassets in Resources */,
+				BB4F1DDD2725ADDB00843E62 /* Assets.xcassets in Resources */,
+				BB4F1DEA2725B12C00843E62 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BB4F1E0027269F3300843E62 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/Salty-Image-Info.plist\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/Salty-Image-Info.plist\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB4F1DD12725ADD800843E62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB031622272FED95002213F5 /* SaltyAlert.swift in Sources */,
+				BBAE8D7A272BEA2200FE2E4E /* ProgressIndicator.swift in Sources */,
+				BB4F1E1A27290A9A00843E62 /* SaltCenter.swift in Sources */,
+				BB4F1E1D27290CCC00843E62 /* InitialSheet.swift in Sources */,
+				BB4F1E092726ED8800843E62 /* FirebaseManager.swift in Sources */,
+				BB4F1DFF272697A000843E62 /* InitSalt.swift in Sources */,
+				BB4F1E162729077F00843E62 /* Extenstions.swift in Sources */,
+				BBF8C7A62729745C002EAE57 /* SaltField.swift in Sources */,
+				BB4F1E032726AE9F00843E62 /* SaltyManager.swift in Sources */,
+				BB9827FF2732CFCA00A44501 /* SaltyEditor.swift in Sources */,
+				BBF8C7AC272AF0A1002EAE57 /* InitialSheetNetwork.swift in Sources */,
+				BB4F1DDB2725ADD800843E62 /* ContentView.swift in Sources */,
+				BBF8C7AA272AE2E3002EAE57 /* FileMT.swift in Sources */,
+				BB4F1E072726B7D500843E62 /* ProjectAspects.swift in Sources */,
+				BB4F1DD92725ADD800843E62 /* Salty_ImageApp.swift in Sources */,
+				BBF8C7A427295F2D002EAE57 /* NewSalt.swift in Sources */,
+				BB9827FB2732CF5100A44501 /* SEImagePreview.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BB4F1DE22725ADDB00843E62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB4F1DE32725ADDB00843E62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		BB4F1DE52725ADDB00843E62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Salty Image/Salty_Image.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 341;
+				DEVELOPMENT_ASSET_PATHS = "\"Salty Image/Preview Content\"";
+				DEVELOPMENT_TEAM = 9RU52AC58E;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Salty-Image-Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = studio.arata.saltyImage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BB4F1DE62725ADDB00843E62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Salty Image/Salty_Image.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 341;
+				DEVELOPMENT_ASSET_PATHS = "\"Salty Image/Preview Content\"";
+				DEVELOPMENT_TEAM = 9RU52AC58E;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Salty-Image-Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = studio.arata.saltyImage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB4F1DD02725ADD800843E62 /* Build configuration list for PBXProject "Salty Image" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB4F1DE22725ADDB00843E62 /* Debug */,
+				BB4F1DE32725ADDB00843E62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB4F1DE42725ADDB00843E62 /* Build configuration list for PBXNativeTarget "Salty Image" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB4F1DE52725ADDB00843E62 /* Debug */,
+				BB4F1DE62725ADDB00843E62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BB9828002732DDE300A44501 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		BBFA611127339B3600AB88A9 /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BB9828012732DDE300A44501 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB9828002732DDE300A44501 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		BB9828032732DDE300A44501 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB9828002732DDE300A44501 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		BB9828052732DDE300A44501 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB9828002732DDE300A44501 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		BB9828072732DDE300A44501 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB9828002732DDE300A44501 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		BBFA611227339B3600AB88A9 /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBFA611127339B3600AB88A9 /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BB4F1DCD2725ADD800843E62 /* Project object */;
+}
